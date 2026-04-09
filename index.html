@@ -4,6 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kananga ORBIT JEUX | Créateurs d'Avenir</title>
+
+        
+    <!-- SEO : TITRE ET DESCRIPTION (Ce qui s'affiche sur Google) -->
+    
+    <meta name="description" content="Découvrez Kananga ORBIT JEUX, le studio de jeux vidéo futuriste basé en RDC. Jouez à Kananga Lubilu, apprenez la science et découvrez l'excellence numérique congolaise.">
+    <meta name="keywords" content="Kananga Orbit Jeux, Kananga Lubilu, Studio Jeu Vidéo RDC, Gaming Afrique, Développement de jeux Congo, Science par le jeu, Cyber-Kasaï">
+    <meta name="author" content="Kananga ORBIT JEUX">
+
+        <!-- Open Graph (Pour l'affichage sur Facebook/WhatsApp/LinkedIn) -->
+    <meta property="og:title" content="Kananga ORBIT JEUX | L'avenir du jeu vidéo en RDC">
+    <meta property="og:description" content="Nous créons des univers, nous éveillons les consciences. Découvrez notre premier titre Kananga Lubilu.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://kananga-orbit.onrender.com">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1550745165-9bc0b252726f?q=80&w=1200">
+
+
     
     <!-- Polices Google -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -170,7 +186,7 @@
                         <span class="text-orange text-glow-orange">Orbit Jeux</span>
                     </h1>
                     <p class="mt-4 text-xl md:text-2xl text-gray-300 max-w-3xl mx-auto font-light mb-10">
-                        NNous créons des univers, nous éveillons les consciences et nous prouvons au monde que l'excellence technologique naît aussi en Afrique.
+                        Nous créons des univers, nous éveillons les consciences et nous prouvons au monde que l'excellence technologique naît aussi en Afrique.
                     </p>
                     <div class="flex flex-col sm:flex-row gap-4 justify-center">
                         <a href="#game" class="nav-link btn-cyber bg-cyan text-deep font-bold px-8 py-4 rounded-lg flex items-center justify-center gap-2 hover:bg-white transition-colors">
@@ -234,23 +250,44 @@
                             </div>
                         </div>
 
-                        <!-- Zone de Téléchargement -->
-                        <div class="glass p-6 rounded-xl border border-gray-700 mt-8">
-                            <h5 class="font-display font-bold text-xl mb-4 flex items-center gap-2">
-                                <i data-lucide="download" class="text-cyan"></i> Téléchargement
-                            </h5>
-                            
-                            
-                            <div class="flex flex-col sm:flex-row gap-3">
-                                <!-- Exemple de lien de téléchargement (Note: href pointe vers un fichier, download force le téléchargement) -->
-                                <a href="kananga-lubilu-android.apk" download class="btn-cyber flex-1 bg-white/10 hover:bg-cyan hover:text-deep text-white font-medium py-3 px-4 rounded-lg flex items-center justify-center gap-3 transition-all border border-gray-600">
-                                    <i data-lucide="smartphone" class="w-5 h-5"></i> APK Android
+                        <div class="glass p-6 rounded-xl border border-gray-700">
+                            <h3 class="font-display font-bold text-xl mb-2 text-cyan text-glow-cyan">Téléchargement</h3>
+    
+                             <!-- Ce span avec l'ID sera mis à jour par le script -->
+                            <p class="text-sm text-gray-400 mb-6">Rejoignez <span id="total-downloads" class="font-bold text-white text-lg">...</span> pionniers sur le terrain.</p>
+    
+                            <div class="grid grid-cols-2 gap-4">
+                                <!-- Bouton Android -->
+                                <a href="kanangalubilu.apk" download onclick="registerClick('Android')" class="bg-white/5 p-4 rounded-xl border border-gray-800 flex flex-col items-center hover:border-cyan hover:bg-cyan/10 transition-all group">
+                                    <i data-lucide="smartphone" class="mb-2 group-hover:text-cyan"></i>
+                                    <span class="text-xs font-bold uppercase tracking-tighter">Android APK</span>
                                 </a>
-                                <a href="kananga-lubilu-win.exe" download class="btn-cyber flex-1 bg-white/10 hover:bg-cyan hover:text-deep text-white font-medium py-3 px-4 rounded-lg flex items-center justify-center gap-3 transition-all border border-gray-600">
-                                    <i data-lucide="monitor" class="w-5 h-5"></i> Windows PC
+
+                                <!-- Bouton Windows -->
+                                <a href="#" download onclick="registerClick('Windows')" class="bg-white/5 p-4 rounded-xl border border-gray-800 flex flex-col items-center hover:border-cyan hover:bg-cyan/10 transition-all group">
+                                    <i data-lucide="monitor" class="mb-2 group-hover:text-cyan"></i>
+                                    <span class="text-xs font-bold uppercase tracking-tighter">Windows PC</span>
+                                </a>
+
+                                <!-- Bouton iOS (NOUVEAU) -->
+                                <a href="#" download onclick="registerClick('iOS')" class="bg-white/5 p-4 rounded-xl border border-gray-800 flex flex-col items-center hover:border-cyan hover:bg-cyan/10 transition-all group">
+                                    <i data-lucide="apple" class="mb-2 group-hover:text-cyan"></i>
+                                    <span class="text-xs font-bold uppercase tracking-tighter">iOS Bêta</span>
+                                </a>
+
+                                <!-- Bouton MacOS (NOUVEAU) -->
+                                <a href="#" download onclick="registerClick('MacOS')" class="bg-white/5 p-4 rounded-xl border border-gray-800 flex flex-col items-center hover:border-cyan hover:bg-cyan/10 transition-all group">
+                                    <i data-lucide="laptop" class="mb-2 group-hover:text-cyan"></i>
+                                    <span class="text-xs font-bold uppercase tracking-tighter">MacOS</span>
                                 </a>
                             </div>
-                            
+
+                            <div class="mt-6 p-4 bg-cyan/5 border border-cyan/20 rounded-lg">
+                                <p class="text-xs text-gray-400 leading-relaxed text-center">
+                                    <span class="text-orange font-bold uppercase block mb-1">Appel aux testeurs</span>
+                                    Téléchargez le jeu, testez et aidez-nous à bâtir une bonne industrie. Vos feedbacks sont importants.
+                                </p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -365,41 +402,44 @@
             </div>
         </section>
 
-        <!-- ================= PAGE: CONTACT ================= -->
+<!-- CONTACT -->
         <section id="page-contact" class="page-section">
-            <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-                <div class="text-center mb-16 gs-element">
-                    <h2 class="text-cyan font-display font-bold tracking-widest uppercase text-sm mb-2">Rejoignez le mouvement</h2>
-                    <h3 class="text-4xl font-display font-bold text-white mb-4">Contact & Partenariats</h3>
-                    <div class="w-24 h-1 bg-gradient-to-r from-cyan to-orange mx-auto rounded-full"></div>
-                </div>
-
-                <div class="glass p-8 md:p-12 rounded-2xl gs-element">
-                    <form class="space-y-6" onsubmit="event.preventDefault(); alert('Message envoyé avec succès. Nous vous répondrons bientôt !');">
-                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div class="max-w-3xl mx-auto px-4 py-16 gs-element">
+                <h2 class="text-3xl font-display font-bold mb-8 text-center">Contactez l'Équipe Orbit</h2>
+                <div class="glass p-8 rounded-2xl">
+                    <p class="mb-6 text-center text-gray-300">Pour les partenariats, la presse ou rejoindre le studio. Nous vous répondrons rapidement.</p>
+                    
+                    <!-- Formulaire connecté à Formspree -->
+                    <!-- REMPLACEZ l'URL "https://formspree.io/f/VOTRE_CODE_ICI" par celle fournie par Formspree -->
+                    <form action="https://formspree.io/f/mzdkqnev" method="POST" class="space-y-4">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
                             <div>
-                                <label class="block text-sm font-medium text-gray-400 mb-2">Nom complet</label>
-                                <input type="text" class="w-full bg-deep/50 border border-gray-700 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-cyan focus:ring-1 focus:ring-cyan transition-colors" placeholder="Votre nom" required>
+                                <label class="block text-sm text-gray-400 mb-1">Votre Nom</label>
+                                <input type="text" name="nom" required class="w-full bg-deep/50 border border-gray-700 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-cyan">
                             </div>
                             <div>
-                                <label class="block text-sm font-medium text-gray-400 mb-2">Email</label>
-                                <input type="email" class="w-full bg-deep/50 border border-gray-700 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-cyan focus:ring-1 focus:ring-cyan transition-colors" placeholder="votre@email.com" required>
+                                <label class="block text-sm text-gray-400 mb-1">Votre Email</label>
+                                <!-- L'attribut name="email" est important pour que Formspree sache où répondre -->
+                                <input type="email" name="email" required class="w-full bg-deep/50 border border-gray-700 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-cyan">
                             </div>
                         </div>
+                        
                         <div>
-                            <label class="block text-sm font-medium text-gray-400 mb-2">Sujet</label>
-                            <select class="w-full bg-deep/50 border border-gray-700 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-cyan appearance-none">
-                                <option>Je veux rejoindre l'équipe</option>
-                                <option>Partenariat / Sponsoring</option>
-                                <option>Presse et Médias</option>
-                                <option>Autre</option>
+                            <label class="block text-sm text-gray-400 mb-1">Motif</label>
+                            <select name="sujet" class="w-full bg-deep/50 border border-gray-700 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-cyan appearance-none">
+                                <option value="Partenariat">Partenariat / Sponsoring</option>
+                                <option value="Presse">Presse et Médias</option>
+                                <option value="Recrutement">Rejoindre l'équipe</option>
+                                <option value="Retours Jeu">Retours sur le jeu Kananga Lubilu</option>
                             </select>
                         </div>
+
                         <div>
-                            <label class="block text-sm font-medium text-gray-400 mb-2">Message</label>
-                            <textarea rows="5" class="w-full bg-deep/50 border border-gray-700 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-cyan focus:ring-1 focus:ring-cyan transition-colors" placeholder="Comment pouvons-nous collaborer ?" required></textarea>
+                            <label class="block text-sm text-gray-400 mb-1">Votre Message</label>
+                            <textarea name="message" rows="5" required class="w-full bg-deep/50 border border-gray-700 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-cyan" placeholder="Comment pouvons-nous faire avancer l'industrie ensemble ?"></textarea>
                         </div>
-                        <button type="submit" class="w-full btn-cyber bg-cyan text-deep font-bold py-4 rounded-lg flex justify-center items-center gap-2 hover:bg-white transition-colors">
+                        
+                        <button type="submit" class="w-full bg-cyan text-deep font-bold py-4 rounded-lg flex justify-center items-center gap-2 hover:bg-white transition-colors">
                             <i data-lucide="send" class="w-5 h-5"></i> Envoyer le message
                         </button>
                     </form>
@@ -611,6 +651,35 @@
                 document.getElementById('navbar').classList.remove('shadow-[0_4px_30px_rgba(0,255,255,0.1)]');
             }
         });
+
+
+                // --- CONFIGURATION DU COMPTEUR ---
+        const BASE_DE_DEPART = 10; // Chiffre initial pour ne pas partir de zéro
+
+        // Fonction pour récupérer et afficher le total
+        function refreshCounter() {
+            // On récupère les clics stockés localement dans le navigateur de l'utilisateur
+            let storedClicks = localStorage.getItem('orbit_click_count');
+            if (!storedClicks) storedClicks = 0;
+            
+            let displayTotal = parseInt(BASE_DE_DEPART) + parseInt(storedClicks);
+            document.getElementById('total-downloads').innerText = displayTotal + " testeurs";
+        }
+
+        // Fonction appelée lors du clic sur un bouton
+        function registerClick(platform) {
+            let current = localStorage.getItem('orbit_click_count') || 0;
+            localStorage.setItem('orbit_click_count', parseInt(current) + 1);
+            
+            // Mise à jour immédiate du texte
+            refreshCounter();
+            
+            // Notification console pour le débogage
+            console.log(`Téléchargement ${platform} enregistré.`);
+        }
+
+        // Initialisation au chargement de la page
+        window.addEventListener('load', refreshCounter);
     </script>
 </body>
 </html>
