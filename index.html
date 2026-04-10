@@ -1,9 +1,19 @@
 <!DOCTYPE html>
 <html lang="fr" class="scroll-smooth">
 <head>
+        <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-BEHJ9354M4"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-BEHJ9354M4');
+    </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kananga ORBIT JEUX | Créateurs d'Avenir</title>
+    
 
         
     <!-- SEO : TITRE ET DESCRIPTION (Ce qui s'affiche sur Google) -->
@@ -123,6 +133,7 @@
         ::-webkit-scrollbar-thumb:hover { background: #FF7900; }
     </style>
 </head>
+
 <body class="antialiased selection:bg-cyan selection:text-deep">
 
     <!-- Conteneur Three.js (Arrière-plan persistant) -->
@@ -258,7 +269,7 @@
     
                             <div class="grid grid-cols-2 gap-4">
                                 <!-- Bouton Android -->
-                                <a href="kanangalubilu.apk" download onclick="registerClick('Android')" class="bg-white/5 p-4 rounded-xl border border-gray-800 flex flex-col items-center hover:border-cyan hover:bg-cyan/10 transition-all group">
+                                <a href="#" download onclick="registerClick('Android')" class="bg-white/5 p-4 rounded-xl border border-gray-800 flex flex-col items-center hover:border-cyan hover:bg-cyan/10 transition-all group">
                                     <i data-lucide="smartphone" class="mb-2 group-hover:text-cyan"></i>
                                     <span class="text-xs font-bold uppercase tracking-tighter">Android APK</span>
                                 </a>
@@ -681,5 +692,6 @@
         // Initialisation au chargement de la page
         window.addEventListener('load', refreshCounter);
     </script>
+
 </body>
 </html>
